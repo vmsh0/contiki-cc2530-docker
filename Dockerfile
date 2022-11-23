@@ -1,9 +1,9 @@
+FROM debian:bullseye-slim
+
 LABEL org.opencontainers.image.source="https://github.com/vmsh0/contiki-cc2530-docker" \
       org.opencontainers.image.title="cc2530-contiki" \
       org.opencontainers.image.description="A Docker image for the CC2530DK Contiki port" \
       org.opencontainers.image.licenses=MIT
-
-FROM debian:bullseye-slim
 
 ARG SDCC_REV=9092
 
