@@ -1,0 +1,23 @@
+Index: device/lib/Makefile.in
+===================================================================
+--- device/lib/Makefile.in	(revision 9092)
++++ device/lib/Makefile.in	(working copy)
+@@ -184,7 +184,7 @@
+ endif
+ 
+ ifeq ($(OPT_DISABLE_MCS51), 0)
+-TARGETS        += models small-mcs51-stack-auto
++TARGETS        += models model-mcs51-stack-auto
+ endif
+ 
+ ifeq ($(OPT_DISABLE_PIC14), 0)
+Index: device/lib/incl.mk
+===================================================================
+--- device/lib/incl.mk	(revision 9092)
++++ device/lib/incl.mk	(working copy)
+@@ -100,4 +100,4 @@
+   assert.c \
+   time.c
+ 
+-MODELS = small medium large
++MODELS = large huge
